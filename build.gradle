@@ -21,6 +21,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
+	// mysql
+	implementation 'com.mysql:mysql-connector-j:8.4.0'
+
 	// validate
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 
