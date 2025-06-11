@@ -37,4 +37,4 @@ out/
 .vscode/
 
 
-resources/application-deploy.yml
+src/main/resources/application-deploy.yml
