@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: doncarlo-springboot
+  servlet:
+    multipart:
+      max-file-size: 50MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username:
+#    password:
+#    protocol: smtp
+#    properties:
+#      mail:
+#        smtp:
+#          starttls:
+#            enable: true
+#          auth: true
+
+server:
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+  port: 8080
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+        engine:
+          transaction:
+            internal:
+              TransactionImpl: DEBUG
+      springframework:
+        web: DEBUG
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+
+#platformurl:
